@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYAmazon</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<STYLE>
+    *{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font: arial;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+}
+
+.nav-logo{
+height: 50px;
+width: 140px;
+}
+
+.logo{
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+    background-image:url('Amazonlogo.png');
+}
+.nav-search:hover{
+    border: 2px solid goldenrod;
+}
+span{
+    font-size:0.7rem;
+    color: aliceblue;
+}
+.nav-second{
+font-size: 0.8rem;
+font-weight: 700;
+color: aliceblue;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+}
+
+.nav-address{
+    color: aliceblue;
+    align-items: center;
+}
+
+.add-first{
+color: #cccccc;
+font-size: 0.8rem;
+margin-left: 15px;
+
+}
+
+.add-Second{
+
+font-size: 1rem;
+margin-left: 3px;
+}
+
+.add-icon{
+     display: flex;
+     align-items: center;
+}
+
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkgoldenrod;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+
+.search-select{
+    background-color: #f3f3f3;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+     border: none;
+    
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.nav-class i {
+    font-size: 35px;
+    
+}
+
+nav-class{
+    font-size:0.8rem;
+    font-weight: 800;
+}
+
+.pannel{
+ height: 40px;
+ background-color: #222f3d;
+ display: flex;
+ color:aliceblue;
+ align-items: center;
+ justify-content: space-evenly;
+
+}
+
+
+.pannel-ops p {
+    display: inline;
+    margin-left: 18px;
+}
+
+.pannel-ops{
+    width:70%;
+    font-size:0.8rem;
+}
+
+.pannel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.hero-section{
+    height: 800px;
+    background-size: cover;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/pc_unrec_refresh.CB555261616.jpg');
+}
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+margin-top: -400px;
+}
+.box{
+    border: 2px solid aliceblue;
+    height: 400px;
+    width:23%;
+    background-color: aliceblue;
+    }
+
+.boco{
+    height: 175px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-evenly;
+    
+}
+
+.boco1{
+    height: 100%;
+    width: 45%;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2.SY116_CB555624324.jpg');
+    background-size: cover;  
+
+
+}
+
+.boco2{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1.SY116_CB555624324.jpg');
+    background-position-x: center;
+}
+
+.coco{
+    height: 170px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+
+    
+}
+
+.coco1{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1.SY116_CB555624324.jpg');
+        
+}
+
+.coco2{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2.SY116_CB555624324.jpg');
+    background-position-x: center;
+}
+.boco12{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79.SY116_CB667322346.jpg');
+    background-position-x: center;
+}
+.boco22{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-position-x:center;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW.SY116_CB667322346.jpg');
+}
+.coco12{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP.SY116_CB667322346.jpg');
+    background-position-x: center;
+}
+
+.coco22{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm.SY116_CB667322346.jpg);
+    background-position-x: center;
+    
+}
+
+.boco13{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x.SY116_CB553870684.jpg');
+    background-position-x: center;
+    
+}
+.boco23{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x.SY116_CB553870684.jpg');
+    background-position-x: center;
+    
+}
+.coco13{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x.SY116_CB553870684.jpg');
+    background-position-x: center;
+    
+}
+.coco23{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Zeb_0.5x.SY116_CB553870684.jpg');
+    background-position-x: center;
+    
+}
+
+
+.boco14{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X.SY116_CB410830553.jpg');
+    background-position-x: center;
+    
+}.boco24{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x.SY116_CB410830552.jpg');
+    background-position-x: center;
+    
+}.coco14{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116.SY116_CB405090404.jpg');
+    background-position-x: center;
+    
+}.coco24{
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x.SY116_CB410830552.jpg');
+    background-position-x: center;
+    
+}
+.shop-section2{
+    display: flex;
+    justify-content: space-evenly;
+background-color: pink;
+margin-top:-4px;
+}
+
+.bo{
+    border: 2px solid aliceblue;
+    height: 400px;
+    width:23%;
+    margin-top: 25px;
+    background-color: aliceblue;
+
+}
+
+.orange{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mango{
+    height: 95%;
+    width: 90%;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed.SY304_CB448278349.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.mango2{
+    height: 95%;
+    width: 90%;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/wk_25/CC_379X304.SY304_CB555334734.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.man{
+    height: 95%;
+    width: 90%;
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/2023/GateWay/December/CC/PC_379x304_1.SY304_CB572341311.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.mang{
+    height: 95%;
+    width: 90%;
+    background-image: url('https://m.media-amazon.com/images/I/41jc30L1jyL.AC_SY145.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.ro1{
+    background-color:#37475a;
+    color: aliceblue;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+.ro2{
+
+    background-color: #222f3d;
+    color: aliceblue;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 40px;
+}
+ul a {
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.ro3{
+    background-color: #222f3d;
+    color: aliceblue;
+    border-top: 0.5px solid aliceblue;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1{
+    height: 50px;
+    width: 150px;
+    background-size: cover;
+    background-image:url('Amazonlogo.png');
+}
+
+.ro4{
+    background-color: #0f1111;
+    color: aliceblue;
+    height: 100px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.pages{
+    padding-top: 40px;
+}
+
+.copyright{
+    padding-top: 5px;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+</STYLE>
+</head>
+<body>
+   <header>
+      <div class="navbar">
+          <div class="nav-logo border" >
+                <div class="logo"> </div>
+                  </div>
+
+                   <div class="nav-address border">
+                   <p class="add-first">Diliver to</p>
+                  <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-Second">India</p>
+                  </div>
+                  
+                </div>
+
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>ALL</option>
+                    </select>
+                    <input placeholder="Search Amazon" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="nav-sign border">
+                    <p><span>Hello, sign in</span></p>
+                    <div class="nav-second">Accounts & list</div>
+                </div>
+
+                <div class="nav-sign border">
+                    <p><span>Returns</span></p>
+                    <div class="nav-second"> & Orders</div>
+                </div>
+
+                <div class="nav-class border">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </div>
+
+     </div>
+ <div class="pannel">
+
+    <div class="pannel-all ">
+        <i class="fa-solid fa-bars"></i>
+        ALL 
+    </div>
+    <div class="pannel-ops ">
+        <p>Today's Deal</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Gift cards</p>
+        <p>Self</p>
+    </div>
+    <div class="pannel-deals border">
+        Shop deals in electronics
+    </div>
+ </div>
+
+    </header>
+    <div class="hero-section"></div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <h2>
+                Revamp your home in style
+            </h2>
+
+            <div class="boco">
+                <div class="boco1"></div>
+                <div class="boco2"></div>
+            </div>
+
+            <div class="coco">
+                <div class="coco1"></div>
+                <div class="coco2"></div>
+            </div>
+            
+        </div>
+        <div class="box2 box">
+            <h2>
+            Appliances for your home 
+            </h2>
+
+            <div class="boco">
+                <div class="boco12"></div>
+                <div class="boco22"></div>
+            </div>
+
+            <div class="coco">
+                <div class="coco12"></div>
+                <div class="coco22"></div>
+            </div>
+        </div>
+        <div class="box3 box">
+            <h2>
+                Starting ₹149 | Headphones
+
+
+            <div class="boco">
+                <div class="boco13"></div>
+                <div class="boco23"></div>
+            </div>
+
+            <div class="coco">
+                <div class="coco13"></div>
+                <div class="coco23"></div>
+            </div>
+        </div>
+        <div class="box4 box">
+
+            <h2>
+                Automotive essentials
+
+
+            <div class="boco">
+                <div class="boco14"></div>
+                <div class="boco24"></div>
+            </div>
+
+            <div class="coco">
+                <div class="coco14"></div>
+                <div class="coco24"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-section2">
+        <div class="dox1 bo">
+         <h1>Start your fitness journey</h1>
+         <div class="orange">
+            <div class="mango">
+
+            </div>
+        </div>
+        </div>
+
+        <div class="dox2 bo">
+
+            <h1>Up to 50% off | International brands</h1>
+         <div class="orange">
+            <div class="mango2">
+
+            </div>
+        </div>
+        </div>
+        <div class="dox3 bo">
+            <h1>Up to 60% off | Car, bike parts & accessories</h1>
+         <div class="orange">
+            <div class="man"></div>
+        </div>
+        </div>
+        <div class="dox4 bo">
+            <h1>Customers’ Most-Loved products</h1>
+         <div class="orange">
+            <div class="mang"></div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="ro1">
+            Back to top
+        </div>
+        <div class="ro2">
+           <ul>
+                <h4>Get to Know Us</h4>
+<a>About Us</a>
+<a>Careers</a> 
+<a >Press Releases</a>
+<a >Amazon Science</a>
+
+            </ul>
+
+            <ul>
+                <h4>Connect with Us</h4>
+<a>Facebook</a>
+<a>twitter</a> 
+<a >instagram</a>
+
+            </ul>
+
+            <ul>
+                <h4>Make Money with Us</h4>
+<a>Sell on Amazon</a>
+<a>Sell under Amazon Accelerator</a> 
+<a>Protect and Build Your Brand</a>
+<a>Amazon Global Selling</a>
+<a>Become an Affiliate</a>
+<a>Fulfilment by Amazon</a>
+<a>Advertise Your Products</a>
+<a>Amazon Pay on Merchants</a>
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+
+            <ul>
+                <h4>Let Us Help You</h4>
+<a>COVID-19 and Amazon</a>
+<a>Your Account</a> 
+<a >Returns Centre</a>
+<a >Amazon App Download</a>
+<a >Help</a>
+
+
+
+            </ul>
+        </div>
+        <div class="ro3">
+            <div class="logo1"></div>
+
+        </div>
+        <div class="ro4">
+            <div class="pages">
+               <pre> <a>Condition of uses</a>  <a> Privacy notice</a>  <a> Your ads privacy Choices</a> </pre>
+            </div>
+            <div class="copyright">
+                © 1996-2024, Amazon.com, Inc. or its affiliates 
+            </div>
+        </div>
+    </footer>
+<button>Click me to  </button>
+
+</body>
+</html>
